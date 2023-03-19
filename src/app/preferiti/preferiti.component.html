@@ -1,0 +1,9 @@
+<hr>
+<hr>
+<h1>LISTA PREFERITI:</h1>
+<div *ngFor="let p of preferitiService.posts">
+   {{p.title | uppercase}}
+<button type="btn" class="bi bi-trash" (click)="rimuovi(p)"></button>
+</div>
+<button type="btn" class="btn btn-danger" (click)=" preferitiService.svuota()">Svuota intera lista preferiti</button>
+<hr>
