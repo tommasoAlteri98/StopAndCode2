@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Post } from './posts';
+import { Categorie, Post } from './posts';
 
 @Injectable({
   providedIn: 'root'
@@ -91,5 +91,23 @@ export class PostsService {
       "category": "travel"
     }
   ];
+
+  }
+  getCategories(): Categorie[]{
+    return [
+      {
+        "id": "travel",
+        "title": "Viaggi"
+      },
+      {
+        "id": "food",
+        "title": "Cucina"
+      },
+      {
+        "id": "fashion",
+        "title": "Moda"
+      }
+    ]
+
   }
 }

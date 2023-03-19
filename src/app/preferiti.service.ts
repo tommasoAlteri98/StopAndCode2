@@ -18,9 +18,14 @@ export class PreferitiService {
     }
   }
 
-  rimuovi(post: PostPreferito){
-    this.posts.splice(this.posts.indexOf(post))
-  }
+  rimuovi(p: PostPreferito){
+      let i = this.posts.indexOf(p);
+  
+      if(i > -1){
+        this.posts.splice(i, 1);
+      }
+    }
+  
 
   svuota(){
     this.posts = [];

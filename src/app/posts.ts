@@ -14,7 +14,7 @@ export interface PostPreferito{
     title: string;
 }
 
-export interface PostCategories {
+export interface Categorie {
     id: string,
     title: string;
 
